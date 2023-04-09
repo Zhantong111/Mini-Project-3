@@ -5,6 +5,9 @@ let dbConnect = require("./dbConnect");
 
 app.use(express.json());
 
+let postRoutes = require("./routes/postRoutes");
+app.use("/api/post", postRoutes);
+
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to my SQL application." });
 });
