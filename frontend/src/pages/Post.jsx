@@ -26,6 +26,7 @@ const Post = () => {
                     <h2>{post.title}</h2>
                     <h2>{post.description}</h2>
                     {<img src="" alt="" />}
+                    <button className="update"><Link to={`/update/${post.id}`}>Update</Link></button>
                 </div>
             ))}
         </div>
